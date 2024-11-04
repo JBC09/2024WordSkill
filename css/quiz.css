@@ -1,0 +1,199 @@
+canvas {
+    background-color: aliceblue;
+    width: 700px;
+    height: 400px;
+    display: none;
+}
+
+#quiz .nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#svgWrap {
+    width: 1280px;
+    height: 700px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+#svgMap  {
+    width: 1280px;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+circle {
+    r: 22;
+    fill: #ff6700;
+    stroke: #ffa200;
+    stroke-width: 5px;
+    transition: 0.35s;
+}
+
+
+@keyframes sto {
+    0%{
+        stroke: #333;
+        stroke-width: 5px;
+        stroke-dasharray: 10px;
+        stroke-dashoffset: 0px;
+        
+    }
+    100%{
+        stroke-dashoffset: 100px;
+        stroke: #333;
+        stroke-width: 5px;
+        stroke-dasharray: 10px;
+    }
+}
+
+
+@keyframes sto2 {
+    0%{
+        stroke: #ffa200;
+        stroke-width: 5px;
+        stroke-dasharray: 10px;
+        stroke-dashoffset: 0px;
+        
+    }
+    100%{
+        stroke-dashoffset: 100px;
+        stroke: #ffa200;
+        stroke-width: 10px;
+        stroke-dasharray: 10px;
+    }
+}
+
+@keyframes sto3 {
+    0%{
+        stroke: #333;
+        stroke-width: 5px;
+        stroke-dasharray: 20px;
+        stroke-dashoffset: 0px;
+        
+    }
+    100%{
+        stroke-dashoffset: 30px;
+        stroke: #333;
+        stroke-width: 10px;
+        stroke-dasharray: 20px;
+    }
+}
+
+circle.active {
+    fill: black;
+    animation: sto2 3s infinite linear;
+}
+
+line {
+    stroke: #333;
+    stroke-width: 7px;
+    animation: sto 3s infinite linear;
+}
+
+text {
+    fill: white;
+    font-weight: bold;
+    text-anchor: middle;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+
+#quizBox {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    transform: translate(-50%,-50%);
+}
+
+
+#answerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#answerBox p {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* 코스  */
+
+#course .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#course .nav > div {
+    display: flex;
+    gap: 10px;
+}
+
+#course .nav > div div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#course .data > div  {
+    width: 600px;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+}
+
+#course .data > div h1 {
+    font-size: 24px;
+    color: #ff6700;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #ff6700;
+
+}
+
+#course .data > div p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#course  line {
+    stroke: #333;
+    stroke-width: 7px;
+    animation: sto3 7s infinite linear;
+}
+
+
+#distanceModal .form {
+    border-radius: 10px;
+    box-shadow: 10px 10px #ff6700;
+}
+
+#distanceModal .form  p:nth-of-type(1) {
+    font-weight: bold;
+    color: #ffa200;
+    padding-bottom: 5px;
+}
+
+#distanceModal .form  p:nth-of-type(2) {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}

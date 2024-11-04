@@ -1,0 +1,63 @@
+.form {
+    margin: 0 auto;
+}
+
+#puzzleWrap {
+    width: 800px;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#puzzleBox  {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    background-size: 800px 400px;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#grayBox {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: #ff6700;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+input {
+    width: 100%;
+}
+
+#puzzle {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-size: 800px 400px;
+    background-position: center;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    overflow: hidden;
+    top: 50%;
+    box-sizing: border-box;
+    border: 3px solid #ffa200;
+}
+
+.rangeInput{
+    width: 100%;
+    background: linear-gradient(to right, #FFE283 0%, #FFE283 0%, #ececec 0%, #ececec 0%);
+    border-radius: 8px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    accent-color: #ffca1d;
+    box-sizing: border-box;
+  }
